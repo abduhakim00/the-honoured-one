@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: "JJK";
+  src: url(../public/assets/fonts/Jujutsu\ Kaisen.ttf);
+}
+
+:root {
+  --foreground-rgb: 0, 34, 145;
+  --background-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 33, 37, 41;
+
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-image: url("../public/assets/pics/rbb.png");
+  background-size: cover;}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
